@@ -54,12 +54,12 @@ Page({
       })
 
       that.setData({model})
-      console.log(familyData)
+      console.log('family',familyData)
       // console.log(that.getData('userInfo'))
     })
     //设置页面标题
     wx.setNavigationBarTitle({
-      title: '珂珂的小屋'
+      title: '儿子列表'
     })
     // window.fetch('../data/family.json').then(d=>console.log(d))
     // wx.showNavigationBarLoading();

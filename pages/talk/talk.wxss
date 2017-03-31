@@ -1,0 +1,29 @@
+.talk-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.message-container{
+    flex:1;
+    display:flex;
+    height:400px;
+}
+.message{
+    border-top:1px solid rgba(150,150,150,.3);
+  width:100%;
+  position: fixed;
+  bottom:0;
+  left:0;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.message-input{
+    padding: 10px;
+    font-size:14px;
+    flex-basis: 80%;
+}
+.send-message{
+    border-radius: 0;
+    flex-basis:25%;
+}

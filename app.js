@@ -9,7 +9,7 @@ App({
   getUserInfo:function(cb){
     var that = this
     if(this.globalData.userInfo){
-      typeof cb == "function" && cb(this.globalData.userInfo)
+      typeof cb == "function" && cb(this.globalData.userInfo,this.globalData.familyData)
     }else{
       //调用登录接口
       wx.login({

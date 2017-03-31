@@ -1,0 +1,10 @@
+<view class="talk-container">
+    <scroll-view class="message-container" scroll-x="false" scroll-y="true" height="400px">
+        <view class="message-section">
+        </view>
+    </scroll-view>
+    <view class="message">
+        <input type="text"  placeholder="有什么要对儿子说的" bindinput="onChange" class="message-input"/>
+        <button class="send-message" disabled="{{disabled}}" type="{{type}}">发送</button>
+    </view>
+</view>

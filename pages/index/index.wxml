@@ -26,6 +26,6 @@
     <navigator class="category" url="/pages/index/index" hover-class="navigator-hover">
     首页
     </navigator>
-    <navigator class="category" url="../../redirect/redirect/redirect?title=redirect" open-type="redirect" hover-class="other-navigator-hover">家庭会议</navigator>
+    <navigator class="category" url="/pages/talk/talk" open-type="navigate" hover-class="other-navigator-hover">家庭会议</navigator>
   </view>
 </view>
