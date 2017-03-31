@@ -1,0 +1,74 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.container{
+  padding: 50px 0;
+}
+.usermotto {
+  margin-top: 200px;
+}
+
+.family-section{
+  margin-top:50rpx;
+  padding: 10px;
+}
+.family-item{
+    align-content: center;
+  display: flex;
+}
+.family-content{
+    padding: 20px;
+    box-shadow:0 1px 1px rgba(150,150,150,.3);
+}
+.family-item .item{
+  flex:1;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size:15px;
+}
+.family-operation{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  margin-top:10px;
+}
+.family-content .operation{
+  flex-basis: 48%;
+  justify-content: center
+}
+.footer{
+  border-top:1px solid rgba(150,150,150,.3);
+  width:100%;
+  position: fixed;
+  bottom:0;
+  left:0;
+  display: flex;
+  justify-content: center;
+}
+.footer .category{
+  flex:1;
+  text-align: center;
+  min-height:40px;
+  line-height: 40px;
+  font-size:14px;
+  justify-content: center;
+}
+.icon{
+  margin-right:10px;
+}

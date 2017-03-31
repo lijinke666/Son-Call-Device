@@ -1,0 +1,31 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <text>{{title}}</text>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}|{{model}}</text>
+  </view>
+    <!--<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 200px;"></map>-->
+  <scroll-view class="family-section"  scroll-y="true" scroll-x="false" height="100px" >
+  <view class="family-content" wx:for="{{familyData}}" wx:for-index="key" wx:for-item="item">
+    <view class="family-item" >
+      <icon class="item" type="success_no_circle" size="20" color="#F60"/>
+      <text class="item">{{item.name}}</text>
+      <text class="item">{{item.age}}岁</text>
+      <text class="item">{{item.appellation}}</text>
+      <text class="item">{{item.cellPhone}}</text>
+    </view>
+    <view class="family-operation">
+        <button class="operation" type="default"  size="mini" bindtap="cellPhone" data-son="{{item.name}}" data-cellPhone="{{item.cellPhone}}"><icon class="icon" color="#fff" type="search" size="10" />电话</button>
+        <button class="operation" type="primary" size="mini" bindtap="selectLocation" data-latitude="{{item.latitude}}" data-longitude="{{item.longitude}}"><icon class="icon" type="search" size="10"/>查看</button>
+    </view>
+  </view>
+  </scroll-view>
+  <view class="btn-area footer">
+    <navigator class="category" url="/pages/index/index" hover-class="navigator-hover">
+    首页
+    </navigator>
+    <navigator class="category" url="../../redirect/redirect/redirect?title=redirect" open-type="redirect" hover-class="other-navigator-hover">家庭会议</navigator>
+  </view>
+</view>
